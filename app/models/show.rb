@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   end
   
   def Show.most_popular_show
-    Show.
+    Show.order(rating: )
   end
 
 - `most_popular_show`: this method should return the show with the highest
