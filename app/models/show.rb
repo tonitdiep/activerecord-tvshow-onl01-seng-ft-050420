@@ -19,7 +19,9 @@ class Show < ActiveRecord::Base
     Show.sum("rating")
   end
 
-# - `ratings_sum`: returns the sum of all of the ratings.
+  def Show.popular_shows
+    show = Show.where("rating > 5")
+  end
 
 # - `popular_shows`: returns an array of all of the shows that have a rating
 #   greater than `5`. _hint_: use the `where` Active Record method.
