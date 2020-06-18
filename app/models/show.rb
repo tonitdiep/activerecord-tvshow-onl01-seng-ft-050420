@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base
   def Show.highest_rating
-    
+    maximum
   end
 - `highest_rating`: this method should return the highest value in the ratings
   column. _hint_: if there is a `minimum` Active Record method, might there be a
