@@ -7,8 +7,9 @@ class Show < ActiveRecord::Base
     Show.order(rating: :desc).first
   end
 
-# - `most_popular_show`: this method should return the show with the highest
-#   rating. _hint_: use the `highest_rating` method as a helper method.
+  def Show.lowest_rating
+    Show.minimum("rating")
+  end
 
 # - `lowest_rating`: returns the lowest value in the ratings column.
 
