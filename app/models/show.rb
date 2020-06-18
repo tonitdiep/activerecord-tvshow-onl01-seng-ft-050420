@@ -24,7 +24,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show.shows_by_alphabetical_order
-    Show.order(name :asc)
+    Show.order(name: :asc)
   end
 # - `shows_by_alphabetical_order`: returns an array of all of the shows sorted by
 #   alphabetical order according to their names. _hint_: use the `order` Active
