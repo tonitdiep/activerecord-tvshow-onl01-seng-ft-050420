@@ -23,9 +23,9 @@ class Show < ActiveRecord::Base
     show = Show.where("rating > 5")
   end
 
-# - `popular_shows`: returns an array of all of the shows that have a rating
-#   greater than `5`. _hint_: use the `where` Active Record method.
-
+  def Show.shows_by_alphabetical_order
+    Show.order("")
+  end
 # - `shows_by_alphabetical_order`: returns an array of all of the shows sorted by
 #   alphabetical order according to their names. _hint_: use the `order` Active
 #   Record method.
